@@ -11,7 +11,7 @@ class Landing extends React.Component {
             <Grid.Column textAlign='center'>
               <Icon inverted size="huge" name="users"/>
               <Header inverted as="h1">Multiple Users</Header>
-              <Header as="h3">This address book enables any number of users to register and save their business contacs.
+              <Header inverted as="h3">This address book enables any number of users to register and save their business contacs.
                 You can only see the contacts you have created</Header>
             </Grid.Column>
 
