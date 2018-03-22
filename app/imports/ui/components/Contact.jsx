@@ -5,6 +5,7 @@ import { withRouter, Link } from 'react-router-dom';
 import Note from '/imports/ui/components/Note';
 import AddNote from '/imports/ui/components/AddNote';
 import { Contacts } from '/imports/api/contact/contact';
+import { Bert } from 'meteor/themeteorchef:bert';
 
 /** Renders a single row in the List Stuff table. See pages/ListStuff.jsx. */
 class Contact extends React.Component {
@@ -23,7 +24,8 @@ class Contact extends React.Component {
   }
 
   onClick() {
-    Contacts.remove(this.props.contact._id, this.deleteCallback);
+    /* eslint-disable-next-line */
+    if (confirm('Delete the item?')) { Contacts.remove(this.props.contact._id, this.deleteCallback); }
   }
   render() {
     return (
