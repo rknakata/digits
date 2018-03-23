@@ -1,4 +1,4 @@
-<img src="/docs/digits-landing-page.png">
+<img src="digits-landing-page.png">
 <p>Digits is an application that allows users to:</p>
 
 <ul>
